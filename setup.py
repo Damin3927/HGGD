@@ -21,7 +21,7 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
-        "numpy==1.23.5",
+        "numpy>=1.23.5",
         "pandas",
         "numba",
         "matplotlib",
