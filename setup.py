@@ -11,8 +11,15 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/THU-VCLab/HGGD",
-    packages=find_packages(include=["hggd", "hggd.*", "customgraspnetAPI", "customgraspnetAPI.*", 
-                                   "dataset", "dataset.*", "models", "models.*"]),
+    packages=["hggd", "models", "dataset", "customgraspnetAPI",
+              "customgraspnetAPI.utils", "customgraspnetAPI.utils.dexnet", "customgraspnetAPI.utils.dexnet.grasping", 
+              "customgraspnetAPI.utils.dexnet.grasping.meshpy"],
+    package_dir={
+        "hggd": "hggd",
+        "models": "models",
+        "dataset": "dataset", 
+        "customgraspnetAPI": "customgraspnetAPI"
+    },
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
