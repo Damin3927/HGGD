@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hggd"
+version = "0.1.0"
+description = "Efficient Heatmap-Guided 6-Dof Grasp Detection in Cluttered Scenes"
+readme = "README.md"
+authors = [
+    {name = "mhgou", email = "example@example.com"}
+]
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+dependencies = [
+    "numpy>=1.23.5",
+    "pandas",
+    "matplotlib",
+    "open3d",
+    "opencv-python",
+    "scikit-image",
+    "tensorboardX",
+    "torchsummary",
+    "tqdm",
+    "transforms3d",
+    "trimesh",
+    "autolab_core",
+    "cvxopt",
+    "numba",
+]
+
+[project.optional-dependencies]
+dev = [
+    "cupoch",
+    "grasp_nms",
+]
+
+[tool.setuptools]
+packages = ["hggd", "hggd.models", "hggd.dataset", "hggd.customgraspnetAPI"]
+
+[tool.setuptools.package-data]
+"*" = ["*.py"]
