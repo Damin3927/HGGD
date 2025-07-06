@@ -3,7 +3,7 @@ import math
 
 import cv2
 import numpy as np
-import open3d as o3d
+# import open3d as o3d
 
 EPS = 1e-8
 from .config import get_camera_intrinsic

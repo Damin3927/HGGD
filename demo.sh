@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0 python demo.py \
+CUDA_VISIBLE_DEVICES=0 python demo_device_agnostic.py \
 --center-num 48 \
 --anchor-num 7 \
 --anchor-k 6 \

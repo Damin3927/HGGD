@@ -11,7 +11,7 @@ authors = [
     {name = "mhgou", email = "example@example.com"}
 ]
 license = {file = "LICENSE"}
-requires-python = ">=3.6"
+requires-python = ">=3.9"
 dependencies = [
     "numpy>=1.23.5",
     "pandas",
@@ -27,6 +27,7 @@ dependencies = [
     "autolab_core",
     "cvxopt",
     "numba",
+    "torch>=2.6.0",
 ]
 
 [project.optional-dependencies]
