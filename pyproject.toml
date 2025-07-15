@@ -27,7 +27,6 @@ dependencies = [
     "autolab_core",
     "cvxopt",
     "numba",
-    "torch>=2.5.1",
 ]
 
 [project.optional-dependencies]
